@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import { Sender } from "./Sender";
+import { Receiver } from "./Receiver";
 
 export function Messages() {
-	return (
-		<div>
-			<p>Messages</p>
-		</div>
-	)
+  return (
+    <div>
+      <Sender />
+      <Receiver />
+    </div>
+  );
 }

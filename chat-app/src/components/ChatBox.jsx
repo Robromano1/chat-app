@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Messages } from './Messages';
+import React from "react";
+import { Messages } from "./Messages";
 
 export function ChatBox() {
-	return (
-		<div className="chatContainer">
-			<Messages />
-		</div>
-	)
+  return (
+    <div className="chatContainer">
+      <Messages />
+    </div>
+  );
 }
