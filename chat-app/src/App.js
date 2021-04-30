@@ -3,34 +3,20 @@ import { Navbar } from "./components/Navbar";
 import { ChatBox } from "./components/ChatBox";
 import { Sidebar } from "./components/Sidebar";
 import { MessageForm } from "./components/MessageForm";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function App() {
-  const [sender, setSender] = useState(["Hey", "Whatsup"]);
+  const [sender] = useState(["Hey", "Whatsup"]);
   const [receiver, setReceiver] = useState(["I'm good", "How are you"]);
-  const [messages, setMessages] = useState([
-    "Hey",
-    "Whatsup",
-    "I'm good",
-    "How are you",
-  ]);
-
-  const [message, setMessage] = useState({
-    body: "",
-  });
 
   const handleSubmit = (text) => {
-    setMessages([...messages, text]);
+    setReceiver([...receiver, text]);
   };
-
-  useEffect(() => {
-    
-  }, [messages])
 
   return (
     <div className="App">
       <Navbar />
-      <ChatBox messages={messages}/>
+      <ChatBox sender={sender} receiver={receiver}/>
       <Sidebar />
       <MessageForm onSubmit={handleSubmit}/>
     </div>

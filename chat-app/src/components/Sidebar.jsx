@@ -14,9 +14,9 @@ export function Sidebar() {
       </div>
       <div className="imgWrap">
         <img
-					className="userImg"
+          className="userImg"
           src="images/photo-1506744038136-46273834b3fb.jpg"
-          alt="profile-image"
+          alt="profile"
         />
       </div>
     </div>

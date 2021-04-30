@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { MessageForm } from './MessageForm';
-import { MessageItem } from './MessageItem';
-import '../stylesheets/chat.css';
+import { MessageItem } from "./MessageItem";
+import "../stylesheets/chat.css";
 
-export function Messages({ messages, onSubmit }) {
-
+export function Messages({ onSubmit, sender, receiver }) {
   return (
     <div>
-      <div>
-        <MessageItem messages={messages} onSubmit={onSubmit}/>
+      <div className="senderWrap">
+        <MessageItem sender={sender} onSubmit={onSubmit} />
+      </div>
+      <div className="receiverWrap">
+        <MessageItem receiver={receiver} />
       </div>
     </div>
   );

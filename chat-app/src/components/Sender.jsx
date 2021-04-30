@@ -6,7 +6,7 @@ export function Sender() {
   return (
     <div>
       {sender.map((message, idx) => (
-        <MessageItem message={message} key={idx}/>
+        <MessageItem message={message} key={idx} />
       ))}
     </div>
   );

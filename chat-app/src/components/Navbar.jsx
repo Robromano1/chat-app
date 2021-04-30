@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../stylesheets/navbar.css";
 
 export function Navbar() {
-  const [username, setUsername] = useState("Guest");
+  const [username] = useState("Guest");
 
   return (
     <div className="header">
@@ -10,7 +10,7 @@ export function Navbar() {
       <img
         className="profile-image"
         src="images/photo-1506744038136-46273834b3fb.jpg"
-        alt="profile-image"
+        alt="profile"
       />
     </div>
   );

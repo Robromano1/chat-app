@@ -6,7 +6,7 @@ export function Receiver() {
   return (
     <div>
       {receiver.map((receiverMsg, index) => (
-        <MessageItem message={receiverMsg} keyy={index}/>
+        <MessageItem message={receiverMsg} keyy={index} />
       ))}
     </div>
   );

@@ -1,23 +1,24 @@
-import React, {useState} from "react";
-import '../stylesheets/chat.css';
+import React, { useState } from "react";
+import "../stylesheets/chat.css";
 
 export function MessageForm({ onSubmit }) {
   const [userText, setUserText] = useState("");
-  
-	const handleSubmit = e => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(userText);
-    setUserText('');
-  }
+    setUserText("");
+  };
 
   return (
     <div>
       <form className="messageForm" onSubmit={handleSubmit}>
-        <input className="msgInput"
-          type="text" 
+        <input
+          className="msgInput"
+          type="text"
           value={userText}
           placeholder="Type something..."
-          onChange={e => setUserText(e.target.value)} 
+          onChange={(e) => setUserText(e.target.value)}
         />
       </form>
     </div>
