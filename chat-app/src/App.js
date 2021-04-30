@@ -3,7 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { ChatBox } from "./components/ChatBox";
 import { Sidebar } from "./components/Sidebar";
 import { MessageForm } from "./components/MessageForm";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
   const [sender, setSender] = useState(["Hey", "Whatsup"]);
@@ -22,6 +22,10 @@ function App() {
   const handleSubmit = (text) => {
     setMessages([...messages, text]);
   };
+
+  useEffect(() => {
+    
+  }, [messages])
 
   return (
     <div className="App">
