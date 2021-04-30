@@ -11,14 +11,21 @@ function App() {
 
   const handleSubmit = (text) => {
     setReceiver([...receiver, text]);
+    scroll();
+  };
+
+  const scroll = () => {
+    document
+      .getElementById("receiverContainer")
+      .scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
   return (
     <div className="App">
       <Navbar />
-      <ChatBox sender={sender} receiver={receiver}/>
+      <ChatBox sender={sender} receiver={receiver} />
       <Sidebar />
-      <MessageForm onSubmit={handleSubmit}/>
+      <MessageForm onSubmit={handleSubmit} />
     </div>
   );
 }

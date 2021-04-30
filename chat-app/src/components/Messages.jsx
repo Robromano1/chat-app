@@ -7,7 +7,7 @@ export function Messages({ onSubmit, sender, receiver }) {
       <div className="senderWrap">
         <MessageItem sender={sender} onSubmit={onSubmit} />
       </div>
-      <div className="receiverWrap">
+      <div id="receiverContainer" className="receiverWrap">
         <MessageItem receiver={receiver} />
       </div>
     </div>
