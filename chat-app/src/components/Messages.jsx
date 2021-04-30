@@ -1,3 +1,4 @@
+import React from 'react';
 import { Sender } from "./Sender";
 import { Receiver } from "./Receiver";
 

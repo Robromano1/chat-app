@@ -5,6 +5,7 @@
 	border: 1px solid black;
 	width: 75%;
 	margin: 20px auto;
+	position: relative;
 }
 
 .header h3 {
