@@ -39,3 +39,10 @@
 	display: flex;
 	justify-content: center;
 }
+
+@media screen and (max-width: 772px) {
+	.sidebar {
+		width: 40%;
+		right: 2.3%;
+	}
+}

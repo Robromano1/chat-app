@@ -45,3 +45,20 @@ li {
 	width: fit-content;
 	border-radius: 5px;
 }
+
+@media screen and (max-width: 772px) {
+	.chatContainer {
+		margin-left: 2.3%;
+	}
+
+	.messageForm input {
+		width: 93.5%;
+		margin-left: 2.3%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.messageForm input {
+		width: 92.6%;
+	}
+}
