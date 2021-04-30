@@ -5,6 +5,7 @@
 	margin-left: 12.45%;
 	position: absolute;
 	top: 10.8%;
+	background-color: #2c2f33d9;
 }
 
 .senderMsg {
@@ -16,14 +17,19 @@
 
 .messageForm input{
 	margin-top: 480px;
-	width: 74.5%;
+	width: 74.1%;
 	height: 40px;
 	outline: none;
 	margin-left: 12.45%;
+	background-color: #2c2f33d9;
+	padding: 5px;
+	border-top: none;
+	color: #ffffff;
 }
 
 li {
 	list-style-type: none;
+	color: #ffffff;
 }
 
 .senderMsgItem {
