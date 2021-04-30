@@ -4,8 +4,12 @@ import { Receiver } from "./Receiver";
 export function Messages() {
   return (
     <div>
-      <Sender />
-      <Receiver />
+      <div className="senderMessageWrap">
+        <Sender />
+      </div>
+      <div className="receiverMessageWrap">
+        <Receiver />
+      </div>
     </div>
   );
 }

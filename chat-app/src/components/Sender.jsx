@@ -5,8 +5,8 @@ export function Sender() {
   const [sender, setSender] = useState(["Hey", "Whatsup"]);
   return (
     <div>
-      {sender.map((message) => (
-        <MessageItem message={message} />
+      {sender.map((message, idx) => (
+        <MessageItem message={message} key={idx}/>
       ))}
     </div>
   );
