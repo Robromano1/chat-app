@@ -3,11 +3,10 @@ import { Messages } from "./Messages";
 import '../stylesheets/chat.css'
 import { Sidebar } from "./Sidebar";
 
-export function ChatBox() {
+export function ChatBox({ messages, onSubmit }) {
   return (
     <div className="chatContainer">
-      <Messages />
-      <Sidebar />
+      <Messages messages={messages} onSubmit={onSubmit}/>
     </div>
   );
 }

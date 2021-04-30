@@ -1,11 +1,16 @@
 import React from "react";
 import '../stylesheets/chat.css';
 
-export function MessageItem({ message, receiverMsg, key, keyy }) {
+export function MessageItem({ messages }) {
   return (
-    <div className="messageWrap">
-      <div id={key} className="senderMsg">{message}</div>
-      <div id={keyy} className="receiverMsg">{receiverMsg}</div>
-    </div>
+   <>
+    {messages ? messages.map((msg, idx) => (
+      <ul>
+        <li key={idx}>
+          {msg}
+        </li>
+      </ul>
+    )) : ''}
+   </>
   );
 }

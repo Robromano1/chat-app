@@ -1,8 +1,8 @@
 .sidebar {
 	position: absolute;
+	width: 270px;
+	right: 170px;
+	height: 500px;
 	border: 1px solid black;
-	width: 25%;
-	right: 0;
-	top: 0;
-	height: 100%;
+	top: 10.8%;
 }
